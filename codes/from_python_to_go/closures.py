@@ -2,7 +2,7 @@
 
 
 def integer_sequence():
-    '''Return a sequence of integers'''
+    '''Returns a sequence of integers'''
     i = 0
     def sequence():
         nonlocal i

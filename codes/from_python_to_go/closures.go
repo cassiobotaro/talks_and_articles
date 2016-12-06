@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-// intSeq return a function that returns a sequence of integers
+// intSeq returns a function that returns a sequence of integers
 func intSeq() func() int {
 	i := 0
 	return func() int {

@@ -11,7 +11,7 @@ func Unsafe_division(number1, number2 int) (int, error) {
 	return number1 / number2, nil
 }
 
-// Main handle an exception.
+// Main handles an exception.
 func main() {
 	res, err := Unsafe_division(3, 0)
 	if err != nil {
