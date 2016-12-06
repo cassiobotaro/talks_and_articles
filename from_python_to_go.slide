@@ -93,7 +93,7 @@ In object-oriented languages, the term interface is often used to define an abst
 
 * Interfaces
 
-.play codes/from_python_to_go/interface.go
+.play codes/from_python_to_go/interfaces.go
 
 * Generators
 A generator is simply a function which returns an object on which you can call next, such that for every call it returns some value, until it raises a StopIteration exception, signaling that all values have been generated. Such an object is called an iterator.
