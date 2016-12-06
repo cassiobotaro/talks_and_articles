@@ -1,0 +1,138 @@
+From Python to Go
+from python import gopher
+Tags: go, python
+
+Cássio Botaro
+Backend Developer, Nuveo
+cassiobotaro@gmail.com
+https://cassiobotaro.github.io/
+@cassiobotaro
+
+
+* About me
+.image images/from_python_to_go/logo_grupython.png 500 1000
+.caption _Creator_of_ [[https://www.facebook.com/grupython.ufla/][Grupython Ufla]]
+
+* About me
+.image images/from_python_to_go/pythonmg.png
+.caption _Active_member_at_ [[https://pythonmg.github.io/][Minas Gerais Python Users Group]]
+
+* About me
+.image images/from_python_to_go/nuveo.png 500 1000
+.caption _Backend_Developer_at_ [[https://www.nuveo.com.br/][Nuveo]]
+
+* Disclaimer
+
+- Will not be a tutorial
+- Will not  be a flamewar "python vs go"
+- You will not need to know python
+
+* Summary
+
+- Error Handling
+- Closures
+- OOP
+- Generator
+- Concurrency
+- Missing features
+
+* Exception Handling
+
+Exception handling is the process of responding to the occurrence, during computation, of exceptions – anomalous or exceptional conditions requiring special processing – often *changing* *the* *normal* *flow* *of* *program* *execution*.
+.image images/from_python_to_go/error.jpg
+
+* Exception Handling
+
+.play codes/from_python_to_go/error_handling.py
+
+* Exception Handling
+
+.play codes/from_python_to_go/error_handling.go
+
+* Closures
+
+Closures (also lexical closures or function closures) are techniques for implementing lexically scoped name binding in languages with first-class functions. Operationally, a closure is a record storing a function together with an environment. A mapping associating each free variable of the function (variables that are used locally, but defined in an enclosing scope) with the value or reference to which the name was bound when the closure was created.
+.image images/from_python_to_go/closure.png
+
+* Closures
+
+.play codes/from_python_to_go/closures.py
+
+* Closures
+
+.play codes/from_python_to_go/closures.go
+
+* OOP
+
+This topic is very extensive. So I choose only a few topics.
+.image images/from_python_to_go/golang_fly.png
+
+* Inheritance
+
+In object-oriented programming, inheritance is when an object or class is based on another object (prototypal inheritance) or class (class-based inheritance), using the same implementation (inheriting from an object or class) or specifying a new implementation to maintain the same behavior
+.image images/from_python_to_go/inheritance.png
+
+* Inheritance
+
+.play codes/from_python_to_go/inheritance.py
+
+* Inheritance
+
+.play codes/from_python_to_go/inheritance.go
+
+* Interfaces
+
+In object-oriented languages, the term interface is often used to define an abstract type that contains no data or code, but defines behaviors as method signatures.
+.image images/from_python_to_go/interfaces.svg
+
+* Interfaces
+.play codes/from_python_to_go/interfaces.py ,/raise.*[\n]{3}/
+
+* Interfaces
+.play -edit codes/from_python_to_go/interfaces.py /MyFile/,
+
+* Generators
+A generator is simply a function which returns an object on which you can call next, such that for every call it returns some value, until it raises a StopIteration exception, signaling that all values have been generated. Such an object is called an iterator.
+.image images/from_python_to_go/generators.svg
+
+* Generators
+.play codes/from_python_to_go/generators.py
+
+* Generators
+.play codes/from_python_to_go/generators.go
+
+* Concurrency
+
+Concurrency is the composition of independently executing computations.
+
+Concurrency is not parallelism!
+
+.image images/from_python_to_go/concurrency.jpg
+
+* Concurrency
+.play codes/from_python_to_go/concurrency.py
+
+* Concurrency
+.play -edit codes/from_python_to_go/concurrency.go ,/\.\.\./
+
+* Concurrency
+.play -edit codes/from_python_to_go/concurrency.go /\.\.\./,
+
+* Missing features
+
+- list comprehensions
+
+    [item for item in items]
+
+- in operator
+
+    element in integer_slice
+
+- python data model
+
+    sum(*items)
+
+* Any Questions?
+.image images/from_python_to_go/questions.svg
+
+
