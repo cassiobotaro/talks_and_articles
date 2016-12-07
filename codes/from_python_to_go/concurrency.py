@@ -5,7 +5,7 @@ import aiohttp
 
 async def ping(url):
     resp = await aiohttp.request('GET', url)
-    print(url, resp.status)
+    print(url, '->', resp.status)
     resp.close()
 
 urls = [

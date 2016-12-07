@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 from abc import ABCMeta, abstractmethod
-# Attention: Bad python code, don't do it in home
+# Attention: Bad python code, don't do it at home
 
 
 class FileLikeObject(metaclass=ABCMeta):

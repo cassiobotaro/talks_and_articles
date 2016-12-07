@@ -8,7 +8,7 @@ def unsafe_division(number1, number2):
 
 
 def main():
-    '''Will handles an exception.'''
+    '''Will handle an exception.'''
     try:
         print(unsafe_division(3, 0))
     except ZeroDivisionError as exc:
