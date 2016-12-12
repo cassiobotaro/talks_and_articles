@@ -8,6 +8,9 @@ cassiobotaro@gmail.com
 https://cassiobotaro.github.io/
 @cassiobotaro
 
+* Slides
+Estes slides já estão disponíveis em [[https://goo.gl/d8JMXp][https://goo.gl/d8JMXp]]
+
 * Sobre
 .image images/from_python_to_go/logo_grupython.png 500 1000
 .caption _Idealizador_do_ [[https://www.facebook.com/grupython.ufla/][Grupython Ufla]]
@@ -41,15 +44,16 @@ https://cassiobotaro.github.io/
 * Performance
 .play codes/introducao_ao_go/echo.go /jsonHandler/,
 
+* Vamos ao tutorial
+
 * Resumo
 
 - Instalação
 - Configuração
 - Olá Mundo
-- Básico(variáveis, condicionais, repetição, entrada de dados)
+- Básico(variáveis, condicionais, repetição)
 - Funções
 - Tratamento de erros
-- Tipos customizados
 - Estruturas
 - Manipulação de arquivos
 
@@ -173,11 +177,11 @@ Tipos de variáveis em Go:
 
 * Funções
 .play -edit codes/introducao_ao_go/funcoes.go /func main/,
-.link https://play.golang.org/p/rtk4cqlTTg
+.link https://play.golang.org/p/ENa2YX60_z
 
-* Tratamento de erros
-.play -edit codes/from_python_to_go/error_handling.go
-.link https://play.golang.org/p/2VzfH_59YA
+* Tratamento de exceções
+.play -edit codes/introducao_ao_go/tratamento_excecoes.go
+.link https://play.golang.org/p/D1mX_8JW8n
 
 * Estruturas
 .play -edit codes/introducao_ao_go/estruturas.go /type/,
@@ -187,8 +191,14 @@ Tipos de variáveis em Go:
 .play -edit codes/introducao_ao_go/arquivos.go
 .link https://play.golang.org/p/IIVorSsQGW
 
-* Bônus
-Live code
+* Bônus (Código ao vivo)
+
+* Referências
+
+.link https://github.com/crgimenes/Go-Hands-On
+.link https://gobyexample.com/
+.link https://tour.golang.org
+.link https://golang.org/doc/
 
 * Dúvidas?
 .image images/introducao_ao_go/gopher_question_mark.png

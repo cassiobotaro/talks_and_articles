@@ -28,7 +28,7 @@ func executaFuncao(f func(string) string, valor string) {
 	fmt.Printf(aux)
 }
 
-func ValorByRef(valor *int) {
+func ValorPorReferencia(valor *int) {
 	*valor++
 }
 
@@ -53,7 +53,7 @@ func main() {
 	executaFuncao(ola, "Cássio")
 
 	valor := 4
-	ValorByRef(&valor)
+	ValorPorReferencia(&valor)
 	fmt.Printf("Esperado 5, e encontrado %d", valor)
 
 }
