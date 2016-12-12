@@ -1,0 +1,194 @@
+Introdução ao Go
+Primeiros passos
+Tags: go, iniciante
+
+Cássio Botaro
+Backend Developer, Nuveo
+cassiobotaro@gmail.com
+https://cassiobotaro.github.io/
+@cassiobotaro
+
+* Sobre
+.image images/from_python_to_go/logo_grupython.png 500 1000
+.caption _Idealizador_do_ [[https://www.facebook.com/grupython.ufla/][Grupython Ufla]]
+
+* Sobre
+.image images/from_python_to_go/pythonmg.png
+.caption _Membro_ativo_do_ [[https://pythonmg.github.io/][Grupo de Usuários Python de Minas Gerais]]
+
+* Sobre
+.image images/from_python_to_go/nuveo.png 500 1000
+.caption _Backend_Developer_at_ [[https://www.nuveo.com.br/][Nuveo]]
+
+* Vamos falar de Go
+.image images/introducao_ao_go/pokemon_go.jpg
+
+* Por que Go?
+.image images/introducao_ao_go/gopher_question_mark.png
+
+* Motivos para escolher Go
+
+* Várias empresas utilizando
+
+.image images/introducao_ao_go/empresas.png
+
+* Deploy facilitado através de binário
+.image images/introducao_ao_go/gopher_cloud.png
+
+* Performance
+.play codes/introducao_ao_go/echo.py
+
+* Performance
+.play codes/introducao_ao_go/echo.go /jsonHandler/,
+
+* Resumo
+
+- Instalação
+- Configuração
+- Olá Mundo
+- Básico(variáveis, condicionais, repetição, entrada de dados)
+- Funções
+- Tratamento de erros
+- Tipos customizados
+- Estruturas
+- Manipulação de arquivos
+
+- Bônus (Nosso proprio servidor)
+
+
+* Instalação
+
+.link https://golang.org/dl/
+
+- Windows
+
+Faça o download do instalador e pronto.
+Estará instalado em `C:\Go`.
+
+- Mac
+
+Faça o download do instalador(.pkg) e pronto.
+Estará instalado em `/usr/local/go`
+
+ou
+
+    brew update && brew install go
+
+* Instalação
+
+- Linux
+
+Baixe o arquivo compactado(.tar.gz)  extraia seu conteudo em `/usr/local/go`.
+
+ou _ubuntu_:
+
+sudo apt install go
+.image images/introducao_ao_go/gojobs.png
+
+*Dica*: *Go* *utiliza* *muito* *o* *git*, *logo* *é* *recomendo* *sua* *instalção*
+
+* Configuração
+
+Para que o ambiente de desenvolvimento funcione corretamente pode ser necessário configurar algumas variáveis de ambiente.
+
+*GOROOT* - Deve apontar para o diretório de instalação do Go, você só precisa se preocupar com essa variável se você preferiu instalar a linguagem em outro diretório, o padrão é /usr/local/go/bin ou C:\Go no caso do Windows.
+
+*PATH* - Deve ter acrescido ao seu valor o diretório onde os binários foram instalados, normalmente /usr/local/go/bin ou C:\Go\bin.
+
+*GOPATH* - Deve apontar para seu diretório de trabalho, frequentemente será $HOME/go.
+
+* Configuração
+
+- Windows
+
+Instalando pelo MSI o sistema já deve fazer o ajuste no PATH, mas caso seja necessário alguma alteração basta ir no "Painel de Controle" -> "Sistema" -> "Avançado" -> Variáveis de ambiente.
+Em algumas versões do Windows você deve ir em "Configurações avançadas do sistema" ->  "Variáveis de ambiente".
+
+- Mac OS X e Linux
+
+No Mac, Linux e BSD você deve adicionar essas variáveis no arquivo de configuração do shell que você estiver usando como .profile no caso do bash ou .zshrc no caso do zsh.
+
+Exemplo:
+
+    export GOPATH=~/projeto
+    export GOROOT=/usr/local/go
+    export PATH=$PATH:$GOROOT/bin
+
+* Olá mundo
+
+.play codes/introducao_ao_go/alo_mundo.go
+.link https://play.golang.org/p/aDO4LFxeGC
+
+Para compilar utilize o seguinte comando:
+
+    go build alo_mundo.go
+
+ou para compilar(pasta temporária) e rodar:
+
+    go run alo_mundo.go
+
+* Variáveis
+Go é fortemente tipada, isso significa que os tipos das variáveis
+são bem definidos e não podem mudar durante o programa.
+
+Tipos de variáveis em Go:
+
+*bool*
+
+*string*
+
+*int* *int8* *int16* *int32* *int64* *uint* *uint8* *uint16* *uint32* *uint64* *uintptr*
+
+*byte* na verdade é um alias para uint8
+
+*rune* é um alias int32 e é usada para armazenar Unicode
+
+*float32* *float64*
+
+*complex64* *complex128*
+
+* Variáveis
+.play -edit codes/introducao_ao_go/variaveis.go /var/,/\.\.\./
+
+* Variáveis
+.play -edit codes/introducao_ao_go/variaveis.go /\.\.\./,/funçãoOlá\(\)/
+.link https://play.golang.org/p/Vo0k5M_p0s
+
+* Condicionais
+.play -edit  codes/introducao_ao_go/condicionais.go /simples/,/o i/
+
+* Condicionais
+.play -edit  codes/introducao_ao_go/condicionais.go /condição/,/\/\/ fim/
+.link https://play.golang.org/p/l6a7gGS203
+
+* Repetição
+.play -edit codes/introducao_ao_go/repeticao.go /valor/,/\/\/ range/
+.link https://play.golang.org/p/zMkjwv1Fva
+
+* Funções
+.code -edit codes/introducao_ao_go/funcoes.go /simples/,/\.\.\./
+
+* Funções
+.code -edit codes/introducao_ao_go/funcoes.go /\.\.\./,/\.\.\./
+
+* Funções
+.play -edit codes/introducao_ao_go/funcoes.go /func main/,
+.link https://play.golang.org/p/rtk4cqlTTg
+
+* Tratamento de erros
+.play -edit codes/from_python_to_go/error_handling.go
+.link https://play.golang.org/p/2VzfH_59YA
+
+* Estruturas
+.play -edit codes/introducao_ao_go/estruturas.go /type/,
+.link https://play.golang.org/p/5LtiXHqjZ4
+
+* Manipulação de arquivos
+.play -edit codes/introducao_ao_go/arquivos.go
+.link https://play.golang.org/p/IIVorSsQGW
+
+* Bônus
+Live code
+
+* Dúvidas?
+.image images/introducao_ao_go/gopher_question_mark.png
