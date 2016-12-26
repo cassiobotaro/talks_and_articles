@@ -13,6 +13,6 @@
  
  You can access an online version of the talks and articles through:
  
- http://go-talks.appspot.com/github.com/cassiobotaro/talks_and_articles/<file.[slide|article]>
+ http://go-talks.appspot.com/github.com/cassiobotaro/talks_and_articles/{{file.[slide|article]}}
  
  Example:  http://go-talks.appspot.com/github.com/cassiobotaro/talks_and_articles/from_python_to_go.slide
