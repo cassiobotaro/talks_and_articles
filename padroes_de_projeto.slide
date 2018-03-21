@@ -34,23 +34,23 @@ Exemplo extraído e adaptado do livro "Python Fluente", o qual recomendo muito!
 
 .code codes/padroes_de_projeto/strategy_traditional.go /Order/,/\n}/
 .code codes/padroes_de_projeto/strategy_traditional.go /Due/,/\n}/
-.link https://play.golang.org/p/QW70OfsHIp5
+.link https://play.golang.org/p/2N7irRYZTYE
 
 * Tradicional
 
 .code codes/padroes_de_projeto/strategy_traditional.go /Promotion interface/,/\n}/
 .code codes/padroes_de_projeto/strategy_traditional.go /FidelityPromo/,/0.0\n}/
-.link https://play.golang.org/p/QW70OfsHIp5
+.link https://play.golang.org/p/2N7irRYZTYE
 
 * Tradicional
 
 .code codes/padroes_de_projeto/strategy_traditional.go /BulkItemPromo/,/discount\n}/
-.link https://play.golang.org/p/QW70OfsHIp5
+.link https://play.golang.org/p/2N7irRYZTYE
 
 * Tradicional
 
 .play codes/padroes_de_projeto/strategy_traditional.go /func main/,/\.\.\./
-.link https://play.golang.org/p/QW70OfsHIp5
+.link https://play.golang.org/p/2N7irRYZTYE
 
 * Funções de primeira ordem
 
@@ -58,29 +58,60 @@ Exemplo extraído e adaptado do livro "Python Fluente", o qual recomendo muito!
 
 .code codes/padroes_de_projeto/strategy_improved.go /Order/,/\n}/
 .code codes/padroes_de_projeto/strategy_improved.go /Due/,/\n}/
-.link https://play.golang.org/p/QW70OfsHIp5
+.link https://play.golang.org/p/8QSBZRhmfpR
 
 
 * Funções de primeira ordem
 
 .code codes/padroes_de_projeto/strategy_improved.go /FidelityPromo/,/\n}/
 .code codes/padroes_de_projeto/strategy_improved.go /BulkItemPromo/,/discount\n}/
-.link https://play.golang.org/p/QW70OfsHIp5
+.link https://play.golang.org/p/8QSBZRhmfpR
 
 * Funções de primeira ordem
 .play codes/padroes_de_projeto/strategy_improved.go /func main/,/\.\.\./
+.link https://play.golang.org/p/8QSBZRhmfpR
 
 * Functional Options
 
 * Problema
 
-* implementação 1
+[[https://github.com/nuveo/storing][Storing]] é uma ferramenta que abstrai leitura e escrita em provedores de armazenamento.
 
-* implementação 2
+Vamos analisar o caso da api de criação de um armazenador da aws, seus problemas e como aprimorá-lo.
 
-* implementação 3
+Este exemplo contem código real e também fictício.
+
+* Variáveis
+
+.code -edit codes/padroes_de_projeto/storing_vars.go /S3/,/return\n}/
+.link https://play.golang.org/p/8QSBZRhmfpR
+
+* Estrutura de configuração
+
+.code -edit codes/padroes_de_projeto/storing_config.go /Storing/,/}/
+.code -edit codes/padroes_de_projeto/storing_config.go /S3Options/,/\n}/
+.link https://play.golang.org/p/8QSBZRhmfpR
+
+* Estrutura de configuração
+
+.code -edit codes/padroes_de_projeto/storing_config.go /NewS3/,/return\n}/
+.link https://play.golang.org/p/8QSBZRhmfpR
+
+* Opções funcionais
+
+.code -edit codes/padroes_de_projeto/storing_functional.go /New/,/return\n}/
+.link https://play.golang.org/p/8QSBZRhmfpR
+
+* Opções funcionais
+
+.code -edit codes/padroes_de_projeto/storing_functional.go /ACL is/,/\n}/
+.code -edit codes/padroes_de_projeto/storing_functional.go /Bucket is/,/\n}/
+.link https://play.golang.org/p/8QSBZRhmfpR
 
 * Conclusão
+
+.image images/padroes_de_projeto/DOCTOR_STRANGE_GOPHER.png
+
 
 * Dúvidas?
 .image images/padroes_de_projeto/NERDY.png
