@@ -84,34 +84,33 @@ Este exemplo contem código real e também fictício.
 * Variáveis
 
 .code -edit codes/padroes_de_projeto/storing_vars.go /S3/,/return\n}/
-.link https://play.golang.org/p/8QSBZRhmfpR
+.link https://play.golang.org/p/-Tc0Eqdu5ji
 
 * Estrutura de configuração
 
 .code -edit codes/padroes_de_projeto/storing_config.go /Storing/,/}/
 .code -edit codes/padroes_de_projeto/storing_config.go /S3Options/,/\n}/
-.link https://play.golang.org/p/8QSBZRhmfpR
+.link https://play.golang.org/p/6_XpXetuGEc
 
 * Estrutura de configuração
 
 .code -edit codes/padroes_de_projeto/storing_config.go /NewS3/,/return\n}/
-.link https://play.golang.org/p/8QSBZRhmfpR
+.link https://play.golang.org/p/6_XpXetuGEc
 
 * Opções funcionais
 
 .code -edit codes/padroes_de_projeto/storing_functional.go /New/,/return\n}/
-.link https://play.golang.org/p/8QSBZRhmfpR
+.link https://play.golang.org/p/LmWph4C7PQZ
 
 * Opções funcionais
 
 .code -edit codes/padroes_de_projeto/storing_functional.go /ACL is/,/\n}/
 .code -edit codes/padroes_de_projeto/storing_functional.go /Bucket is/,/\n}/
-.link https://play.golang.org/p/8QSBZRhmfpR
+.link https://play.golang.org/p/LmWph4C7PQZ
 
 * Conclusão
 
 .image images/padroes_de_projeto/DOCTOR_STRANGE_GOPHER.png
-
 
 * Dúvidas?
 .image images/padroes_de_projeto/NERDY.png
