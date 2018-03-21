@@ -3,7 +3,7 @@ Uma releitura com olhos de gopher
 Tags: go, patterns, design
 
 Cássio Botaro
-Software Engineer at Nuveo
+Software Engineer, Nuveo
 cassiobotaro@gmail.com
 https://cassiobotaro.github.io/
 @cassiobotaro
@@ -11,7 +11,7 @@ https://cassiobotaro.github.io/
 
 * Slides
 
-Estes slides já estão disponíveis em [[https://goo.gl/Nwwq69][https://goo.gl/Nwwq69]]
+Estes slides já estão disponíveis em [[http://bit.ly/padroes_de_projeto][http://bit.ly/padroes_de_projeto]]
 
 * Resumo
 
@@ -24,9 +24,51 @@ Estes slides já estão disponíveis em [[https://goo.gl/Nwwq69][https://goo.gl/
 
 * Problema
 
-* Implementação 1
+Dado um e-commerce, quando um cliente efetua uma uma compra, um desconto pode ser aplicado sobre o valor total da compra, mas este desconto pode ser trocado a qualquer momento.
 
-* Implementação 2
+Exemplo extraído e adaptado do livro "Python Fluente", o qual recomendo muito!
+
+* Tradicional
+
+* Tradicional
+
+.code codes/padroes_de_projeto/strategy_traditional.go /Order/,/\n}/
+.code codes/padroes_de_projeto/strategy_traditional.go /Due/,/\n}/
+.link https://play.golang.org/p/QW70OfsHIp5
+
+* Tradicional
+
+.code codes/padroes_de_projeto/strategy_traditional.go /Promotion interface/,/\n}/
+.code codes/padroes_de_projeto/strategy_traditional.go /FidelityPromo/,/0.0\n}/
+.link https://play.golang.org/p/QW70OfsHIp5
+
+* Tradicional
+
+.code codes/padroes_de_projeto/strategy_traditional.go /BulkItemPromo/,/discount\n}/
+.link https://play.golang.org/p/QW70OfsHIp5
+
+* Tradicional
+
+.play codes/padroes_de_projeto/strategy_traditional.go /func main/,/\.\.\./
+.link https://play.golang.org/p/QW70OfsHIp5
+
+* Funções de primeira ordem
+
+* Funções de primeira ordem
+
+.code codes/padroes_de_projeto/strategy_improved.go /Order/,/\n}/
+.code codes/padroes_de_projeto/strategy_improved.go /Due/,/\n}/
+.link https://play.golang.org/p/QW70OfsHIp5
+
+
+* Funções de primeira ordem
+
+.code codes/padroes_de_projeto/strategy_improved.go /FidelityPromo/,/\n}/
+.code codes/padroes_de_projeto/strategy_improved.go /BulkItemPromo/,/discount\n}/
+.link https://play.golang.org/p/QW70OfsHIp5
+
+* Funções de primeira ordem
+.play codes/padroes_de_projeto/strategy_improved.go /func main/,/\.\.\./
 
 * Functional Options
 
