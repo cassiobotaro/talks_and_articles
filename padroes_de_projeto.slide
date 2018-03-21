@@ -1,0 +1,45 @@
+Padrões de projeto
+Uma releitura com olhos de gopher
+Tags: go, patterns, design
+
+Cássio Botaro
+Software Engineer at Nuveo
+cassiobotaro@gmail.com
+https://cassiobotaro.github.io/
+@cassiobotaro
+
+
+* Slides
+
+Estes slides já estão disponíveis em [[https://goo.gl/Nwwq69][https://goo.gl/Nwwq69]]
+
+* Resumo
+
+- Strategy
+- Functional Options
+.image images/padroes_de_projeto/DRAWING_GOPHER.png
+.caption _credits_by_ [[https://github.com/ashleymcnamara/gophers][@ashleymcnamara]]
+
+* Strategy
+
+* Problema
+
+* Implementação 1
+
+* Implementação 2
+
+* Functional Options
+
+* Problema
+
+* implementação 1
+
+* implementação 2
+
+* implementação 3
+
+* Conclusão
+
+* Dúvidas?
+.image images/padroes_de_projeto/NERDY.png
+.caption _credits_by_ [[https://github.com/ashleymcnamara/gophers][@ashleymcnamara]]
