@@ -11,10 +11,98 @@ https://cassiobotaro.github.io/
 
 * Slides
 
-Estes slides já estão disponíveis em [[http://bit.ly/padroes_de_projeto][http://bit.ly/padroes_de_projeto]]
+Estes slides já estão disponíveis em [[http://bit.ly/python_moderno][http://bit.ly/python_moderno]]
 
 * Resumo
 
+- Sobre Python 2
+
+- Uma série de recursos legais
+
+.image images/python_moderno/sillywalk.jpg 450 900
+
+* Sobre Python 2
+
+* Python 2 está morto
+.iframe https://pythonclock.org/ 600 950
+
+* Uma série de recursos legais
+
+* secrets
+
+.play codes/python_moderno/example_secrets.py
+
+* pathlib
+
+.play codes/python_moderno/example_pathlib.py //,/# \.\.\./
+
+* pathlib
+
+.play codes/python_moderno/example_pathlib.py /# \.\.\./,/read_text/
+
+* redirect stdout
+
+.code codes/python_moderno/example_redirect_output.py
+.link https://repl.it/repls/ProudPutridLifecycles
+
+* unpacking
+
+.play codes/python_moderno/example_unpacking.py
+
+* fstrings
+
+.play codes/python_moderno/example_fstrings.py
+
+* annotations
+
+.play codes/python_moderno/example_annotations.py
+
+* suppress exceptions
+
+.play codes/python_moderno/example_suppress.py
+
+* lru_cache
+
+.play codes/python_moderno/example_lru_cache.py
+
+* try/except from
+
+.play codes/python_moderno/example_try_except_from.py
+
+* keyword only arguments
+
+.play -edit codes/python_moderno/example_keyword.py
+
+* dict keys are set like
+
+.play codes/python_moderno/example_dict.py
+
+* map/zip/filter return iterators
+
+.play -edit codes/python_moderno/example_map_zip_filter.py
+
+* range is iterator?
+
+.play -edit codes/python_moderno/example_range.py
+
+* dataclasses
+
+.code codes/python_moderno/example_dataclasses.py
+
+* breakpoint
+
+.code codes/python_moderno/example_breakpoint.py
+
+* rodar zip as program(live)
+
+* program as a module(live)
+
+* pip e venv(live)
+
 * Conclusão
 
+.background images/python_moderno/conclusao.jpg
+
 * Dúvidas?
+
+.image images/python_moderno/duvidas.jpg
