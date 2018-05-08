@@ -1,0 +1,164 @@
+Postgres + REST = pREST ❤
+A pREST introduction
+Tags: go, postgres, rest
+
+Cássio Botaro
+Software Engineer, Nuveo
+cassiobotaro@gmail.com
+https://cassiobotaro.github.io/
+@cassiobotaro
+
+Igor Leroy
+Software Engineer, Nuveo
+ip.leroy@gmail.com
+http://lerrua.com
+@lerrua
+
+
+* Slides
+
+These slides are already available in [[http://bit.ly/intro_prest][http://bit.ly/intro_prest]]
+.image images/padroes_de_projeto/DRAWING_GOPHER.png
+.caption _credits_by_ [[https://github.com/ashleymcnamara/gophers][@ashleymcnamara]]
+
+* Summary
+
+- Intro
+- Installation
+- Usage
+- Usage as framework
+- New features
+
+* Intro
+
+* Intro
+
+pREST is a way to serve a RESTful APIs for any database. Right now we support PostgreSQL and support to others databases such as MySQL are being developed by the community.
+
+.image images/intro_prest/logo.png
+
+[[http://github.com/prest][Organization]] & [[https://postgres.rest/][Docs]]
+
+* Installation
+
+Using go get:
+
+    go get -u github.com/prest/prest
+
+with Homebrew:
+
+    brew install prest
+
+with docker:
+
+    brew install prest
+
+Executable:
+
+[[https://github.com/prest/prest/releases/tag/v0.3.0][Latest version]]
+
+* Configuration
+
+* prest.toml
+
+    migrations = "./migrations"
+    queries = "./queries"
+
+    [http]
+    port = 6000
+
+    [jwt]
+    key = "secret"
+    algo = "HS256"
+
+    [pg]
+    host = "127.0.0.1"
+    user = "postgres"
+    pass = "mypass"
+    port = 5432
+    database = "prest"
+
+    [ssl]
+    mode = "disable"
+    sslcert = "./PATH"
+    sslkey = "./PATH"
+    sslrootcert = "./PATH"
+
+More datails at [[https://postgres.rest/configurations/#toml][docs]]
+
+* Environment vars
+
+    # migrations
+    PREST_MIGRATIONS="./migrations"
+    PREST_QUERIES="./queries"
+    # http
+    PREST_HTTP_PORT=3000
+    # pg
+    PREST_PG_HOST="127.0.0.1"
+    PREST_PG_USER="postgres"
+    PREST_PG_PASS="mypass"
+    PREST_PG_DATABASE="prest"
+    PREST_PG_PORT=5432
+    # jwt
+    PREST_JWT_KEY=secret
+    PREST_JWT_ALGO=HS256
+    # ssl
+    PREST_SSL_MODE="disable"
+    PREST_SSL_SSLCERT="./path"
+    PREST_SSL_SSLKEY="./path"
+    PREST_SSL_SSLROOTCERT="./path"
+
+More datails at [[https://postgres.rest/configurations/#environment-vars][docs]]
+
+* Usage
+
+* MIGRATION
+
+    # create new migration file in path
+    prest migrate create migration_file_xyz
+
+    # apply all available migrations
+    prest migrate up
+
+    # roll back all migrations
+    prest migrate down
+
+    # roll back the most recently applied migration, then run it again.
+    prest migrate redo
+
+    # run down and then up command
+    prest migrate reset
+
+    # show the current migration version
+    prest migrate version
+
+More datails at [[https://postgres.rest/configurations/#migrations][docs]]
+
+
+* CRUD
+
+* QUERY STATEMENTS
+
+* TABLE PERMISSIONS
+
+* OTHER
+  - script
+  - template
+  - cors
+
+* Usage as framework
+.code codes/intro_prest/hello_world.go /func main/,
+
+* New features
+- batch insert
+- batch update
+- mysql suppport(third party)
+
+* Conclusion
+
+.image images/padroes_de_projeto/DOCTOR_STRANGE_GOPHER.png
+
+* Questions?
+
+.image images/padroes_de_projeto/NERDY.png
+.caption _credits_by_ [[https://github.com/ashleymcnamara/gophers][@ashleymcnamara]]
