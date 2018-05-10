@@ -163,7 +163,7 @@ Delete
 
     curl -X DELETE "localhost:3000/demo/public/person?name=igor"
 
-More datails at [[https://postgres.rest/query-statements/][docs]].
+More details at [[https://postgres.rest/query-statements/][docs]].
 
 Code at [[http://github.com/cassiobotaro/demoprest][this repository]].
 
