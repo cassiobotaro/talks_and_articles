@@ -169,7 +169,48 @@ Code at [[http://github.com/cassiobotaro/demoprest][this repository]].
 
 * Query statements
 
+FILTER
+
+Equal
+
+Null or Not null
+
+True or False
+
+Like
+
+etc
+
+More details at [[https://postgres.rest/query-statements/#filter-where-with-jsonb-field/][docs]].
+
+* Query statements
+
+ORDER BY
+
+ASC
+
+DESC
+
+More details at [[https://postgres.rest/query-statements/#order-by/][docs]].
+
+* Query statements
+
+- JOIN
+- DISTINCT
+- GROUP BY
+- JSONB support
+- Database and schema operations (like `show all tables`)
+
+More details at [[https://postgres.rest/query-statements/][docs]].
+
 * Table permissions
+For default the pREST will serve in publish mode, making all tables and views visible.
+But using prest.toml you can configure read/write/delete permissions of each table.
+
+    [[access.tables]]
+    name = "person"
+    permissions = ["read", "write", "delete"]
+    fields = ["id", "name"]
 
 * Other features
   - script
