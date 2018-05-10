@@ -213,9 +213,13 @@ But using prest.toml you can configure read/write/delete permissions of each tab
     fields = ["id", "name"]
 
 * Other features
+
   - script
   - template
   - cors
+
+.image images/intro_prest/gopher_snacks.png
+.caption _credits_by_ [[https://github.com/ashleymcnamara/gophers][@ashleymcnamara]]
 
 * Usage as framework
 
