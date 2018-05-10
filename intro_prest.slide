@@ -177,6 +177,8 @@ Code at [[http://github.com/cassiobotaro/demoprest][this repository]].
   - cors
 
 * Usage as framework
+
+* Ping
 .code codes/intro_prest/hello_world.go /func main/,
 
 * New features
