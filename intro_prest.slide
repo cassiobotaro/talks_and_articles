@@ -108,7 +108,7 @@ More datails at [[https://postgres.rest/configurations/#toml][docs]]
     PREST_SSL_SSLKEY="./path"
     PREST_SSL_SSLROOTCERT="./path"
 
-More datails at [[https://postgres.rest/configurations/#environment-vars][docs]]
+More datails at [[https://postgres.rest/configurations/#environment-vars][docs]].
 
 * Usage
 
@@ -132,10 +132,40 @@ More datails at [[https://postgres.rest/configurations/#environment-vars][docs]]
     # show the current migration version
     prest migrate version
 
-More datails at [[https://postgres.rest/configurations/#migrations][docs]]
+More datails at [[https://postgres.rest/configurations/#migrations][docs]].
 
 
 * CRUD
+
+Create
+
+    curl -X POST "localhost:3000/demo/public/person" -d '{"name": "cassio", "age": 27}'
+    curl -X POST "localhost:3000/demo/public/person" -d '{"name": "igor", "age": 31}'
+
+Read
+
+    curl -X GET "localhost:3000/demo/public/person"
+or
+
+    curl -X GET "localhost:3000/demo/public/person?name=cassio"
+
+* CRUD 
+
+Update
+
+    curl -X PUT "localhost:3000/demo/public/person?name=igor" -d '{"name": "igor", "age": 32}'
+
+or
+
+    curl -X PATCH "localhost:3000/demo/public/person?name=igor" -d '{age": 31}'
+
+Delete
+
+    curl -X DELETE "localhost:3000/demo/public/person?name=igor"
+
+More datails at [[https://postgres.rest/query-statements/][docs]].
+
+Code at [[http://github.com/cassiobotaro/demoprest][this repository]].
 
 * QUERY STATEMENTS
 
