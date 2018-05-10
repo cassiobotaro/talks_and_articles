@@ -112,7 +112,7 @@ More datails at [[https://postgres.rest/configurations/#environment-vars][docs]]
 
 * Usage
 
-* MIGRATION
+* Migrations
 
     # create new migration file in path
     prest migrate create migration_file_xyz
@@ -149,7 +149,7 @@ or
 
     curl -X GET "localhost:3000/demo/public/person?name=cassio"
 
-* CRUD 
+* CRUD
 
 Update
 
@@ -167,11 +167,11 @@ More datails at [[https://postgres.rest/query-statements/][docs]].
 
 Code at [[http://github.com/cassiobotaro/demoprest][this repository]].
 
-* QUERY STATEMENTS
+* Query statements
 
-* TABLE PERMISSIONS
+* Table permissions
 
-* OTHER
+* Other features
   - script
   - template
   - cors
@@ -182,7 +182,7 @@ Code at [[http://github.com/cassiobotaro/demoprest][this repository]].
 * New features
 - batch insert
 - batch update
-- mysql suppport(third party)
+- mysql suppport (third party)
 
 * Conclusion
 
