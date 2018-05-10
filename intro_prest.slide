@@ -157,7 +157,7 @@ Update
 
 or
 
-    curl -X PATCH "localhost:3000/demo/public/person?name=igor" -d '{age": 31}'
+    curl -X PATCH "localhost:3000/demo/public/person?name=igor" -d '{"age": 31}'
 
 Delete
 
@@ -172,14 +172,23 @@ Code at [[http://github.com/cassiobotaro/demoprest][this repository]].
 FILTER
 
 Equal
+    curl -X GET "localhost:3000/demo/public/person?name=cassio"
+or
+    curl -X GET "localhost:3000/demo/public/person?name=\$eq.cassio"
 
 Null or Not null
+    curl -X GET "localhost:3000/demo/public/person?name=\$null"
+    curl -X GET "localhost:3000/demo/public/person?name=\$notnull"
 
 True or False
+    curl -X GET "localhost:3000/demo/public/person?status=\$true"
+    curl -X GET "localhost:3000/demo/public/person?status=\$false"
 
 Like
+    curl -X GET "localhost:3000/demo/public/person?name=\$like.cassio"
 
 etc
+    $gt, $gte, $lt, $lte, $ne, $in, $nin, $null, $notnull
 
 More details at [[https://postgres.rest/query-statements/#filter-where-with-jsonb-field/][docs]].
 
@@ -188,8 +197,10 @@ More details at [[https://postgres.rest/query-statements/#filter-where-with-json
 ORDER BY
 
 ASC
+    curl -X GET "localhost:3000/demo/public/person?_order=name"
 
 DESC
+    curl -X GET "localhost:3000/demo/public/person?_order=-name"
 
 More details at [[https://postgres.rest/query-statements/#order-by/][docs]].
 
