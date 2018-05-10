@@ -180,9 +180,28 @@ Code at [[http://github.com/cassiobotaro/demoprest][this repository]].
 .code codes/intro_prest/hello_world.go /func main/,
 
 * New features
-- batch insert
-- batch update
-- mysql suppport (third party)
+
+* Batch insert
+
+    curl -x POST "localhost:3000/batch/demo/public/person" \
+       -d @10000records.json -H "Prest-Batch-Method: copy"
+
+.image images/intro_prest/MovingGopher.png
+.caption _credits_by_ [[https://github.com/ashleymcnamara/gophers][@ashleymcnamara]]
+
+* Batch update
+
+Unfornately we decide to not implement this feature due to a performance limitation, but a draft can be founded [[https://gist.github.com/cassiobotaro/0999e201825969129fcec12fc28a03b9][here]].
+
+.image images/intro_prest/LazyGopher.png
+.caption _credits_by_ [[https://github.com/ashleymcnamara/gophers][@ashleymcnamara]]
+
+* Mysql suppport (third party)
+
+This support is under development and can be followed by issue [[https://github.com/prest/prest/issues/239][prest/prest#239]].
+
+.image images/intro_prest/GO_BUILD.png
+.caption _credits_by_ [[https://github.com/ashleymcnamara/gophers][@ashleymcnamara]]
 
 * Conclusion
 
