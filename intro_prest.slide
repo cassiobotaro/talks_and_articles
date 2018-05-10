@@ -184,6 +184,8 @@ True or False
     curl -X GET "localhost:3000/demo/public/person?status=\$true"
     curl -X GET "localhost:3000/demo/public/person?status=\$false"
 
+* Query statements
+
 Like
     curl -X GET "localhost:3000/demo/public/person?name=\$like.cassio"
 
