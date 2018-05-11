@@ -51,7 +51,7 @@ with Homebrew:
 
 with docker:
 
-    brew install prest
+    docker pull prest/prest
 
 Executable:
 
