@@ -1,0 +1,153 @@
+Despedida Nuveo
+Um compilado de informações importantes
+Tags: python, nuveo, arquitetura
+
+Cássio Botaro
+Software Engineer, Nuveo
+cassiobotaro@gmail.com
+https://cassiobotaro.dev/
+@cassiobotaro
+
+
+* Slides
+
+Estes slides já estão disponíveis em [[http://bit.ly/despedida_nuveo][http://bit.ly/despedida_nuveo]]
+
+* Resumo
+
+- TDD
+- Testes de integração
+- Refatoração
+- Arquitetura limpa
+
+* TDD
+
+* Definição
+
+Desenvolvimento guiado por testes (Test Driven Development) é uma técnica de desenvolvimento de software que baseia em um ciclo curto de repetições: 
+Primeiramente o desenvolvedor escreve um caso de teste automatizado que define uma melhoria desejada ou uma nova funcionalidade. Então, é produzido código que possa ser validado pelo teste para posteriormente o código ser refatorado para um código sob padrões aceitáveis.
+
+.image images/despedida_nuveo/tdd.png
+
+* Testes
+
+    def test_listar_tarefas_deve_retornar_status_200():
+        app.config['TESTING'] = True
+        with app.test_client() as cliente:
+            resposta = cliente.get('/tarefas')
+            assert resposta.status_code == 200
+
+.caption Nossa listagem de tarefas, se bem sucedida, deve retornar o código de status 200 OK.
+
+* Código
+
+    from flask import Flask
+
+    app = Flask("Gerenciador")
+
+.caption Vamos resolver o problema criando nossa aplicação
+
+* Código
+
+    from flask import Flask
+
+    app = Flask("Gerenciador")
+
+    @app.route('/tarefas')
+    def listar():
+        return ''
+
+
+.caption Precisamos também definir a rota de listagem das tarefas
+
+* Testes
+
+    def test_listar_tarefas_deve_ter_formato_json():
+        app.config['TESTING'] = True
+        with app.test_client() as cliente:
+            resposta = cliente.get('/tarefas')
+            assert resposta.content_type == 'application/json'
+
+.caption Cabeçalho deve indicar que o retorno da api será em formato json
+
+* Código
+
+    from flask import Flask, jsonify
+
+    app = Flask("Gerenciador")
+
+    @app.route('/tarefas')
+    def listar():
+        return jsonify()
+
+
+.caption flask já possui uma função para nos auxiliar
+
+* Testes
+
+    def test_lista_de_tarefas_vazia_retorna_lista_vazia():
+        app.config['TESTING'] = True
+        with app.test_client() as cliente:
+            resposta = cliente.get('/tarefas')
+            assert resposta.json == []
+
+.caption sem adicionar tarefas, o retorno deve ser uma lista vazia
+
+* Código
+
+    from flask import Flask, jsonify
+
+    app = Flask('Gerenciador')
+
+
+    @app.route('/tarefas')
+    def listar():
+        return jsonify([])
+
+* Testes
+
+    def test_lista_de_tarefas_nao_vazia_retorna_conteudo():
+        tarefas.append({'id': 1, 'titulo': 'tarefa 1',
+                        'descricao': 'tarefa de numero 1', 'estado': False})
+        app.config['TESTING'] = True
+        with app.test_client() as cliente:
+            resposta = cliente.get('/tarefas')
+            assert resposta.json == [{
+                'id': 1,
+                'titulo': 'tarefa 1',
+                'descricao': 'tarefa de numero 1',
+                'estado': False}]
+        tarefas.clear()
+
+.caption ao adicionar uma tarefa, devo retornar-la
+
+* Código
+
+    from flask import Flask, jsonify
+
+    app = Flask('Gerenciador')
+
+    tarefas = []
+
+
+    @app.route('/tarefas')
+    def listar():
+        return jsonify(tarefas)
+
+* Vamos codificar juntos
+
+* Testes de integração + Refatoração + Arquitetura limpa
+
+* Conclusão
+
+.image images/padroes_de_projeto/DOCTOR_STRANGE_GOPHER.png
+
+* Dúvidas?
+.image images/padroes_de_projeto/NERDY.png
+.caption _credits_by_ [[https://github.com/ashleymcnamara/gophers][@ashleymcnamara]]
+
+* Referências
+
+.link  http://bit.ly/do-zero-a-implantacao-meetup-do
+
+.link https://leanpub.com/clean-architectures-in-python
