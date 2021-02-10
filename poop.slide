@@ -11,7 +11,7 @@ https://cassiobotaro.github.io/
 
 * Slides
 
-Estes slides já estão disponíveis em [[http://bit.ly/poop-canal-do-regis][http://bit.ly/poop-canal-do-regis]]
+Estes slides já estão disponíveis em [[http://bit.ly/poop-canal-do-regis][http://bit.ly/poop-canal-do-regis]].
 
 * Avisos importantes ⚠️
 
@@ -22,8 +22,6 @@ Estes slides já estão disponíveis em [[http://bit.ly/poop-canal-do-regis][htt
 - Tem o propósito de ser didática.
 
 Todas as opniões contidas aqui representam a opnião do autor.
-
-.image images/python_moderno/sillywalk.jpg 350 800
 
 * Agenda
 
@@ -51,27 +49,64 @@ Por fim um espaço aberto para tirarem dúvidas.
 
 * Objetos e mensagens
 
-abstração/ encapsulamento
+* Objetos
+
+TODO: código objetos aqui
+
+: - abstraimos nosso problema e tentamos soluciona-lo com objetos
+: - poo é um paradigma, ou seja uma maneira de programar
+: - tudo em python é objeto
+: - objetos/instâncias são tipos de dados que representam
+: - classe é uma categorização ou modelagem de uma abstração (nem sempre tem a palavra reservada, exemplo Go ou estruturas em C)
+: - mensagens representam a comunicação entre objetos (melhor abstração)
+: - mensagens normalmente são chamadas de invocação/chamada de métodos
+: - troca de mensagens podem ser chamados de comportamento
+
+* Estados e encapsulamento
+
+TODO: adicionar algo aqui
+
+: - estados/atributos representam o momento atual de um objeto
+: - alguns estados são compartilhados entre objetos
+: - alguns comportamentos podem não precisar de uma instância
+: - outros podem ser utilizadores como "fábricas" para criação de outro objeto
+: - encapsulamento é prevenir o acesso/modificação acidental de um estado
+: - interface é o conjunto comportamentos/métodos que uma classe possui
+: - em algumas linguagens há uma formalização da implementação de uma interface
+: - pode ter outros nomes
 
 * FizzBuzz (Influenciado por smalltalk)
 
-fizzbuzz.py
+.image images/poop/fizzbuzz.png
 
 * Relação entre objetos
 
-Herança e composição
+* Herança
+
+botão e botão switch
+
+: - objetos podem reaproveitar características de outros
+: - através de herança ou composição
+: - herança representa a relação É-UM
+
+* Composição
+
+jogo composto por células (botões)
+: - composição a relação TEM-UM
 
 * Lights out (game)
 
-lights_out.py
+.image images/poop/lights-out.png
 
 * Objetos e múltiplos comportamentos
 
-polimorfismo
+: por que query set do django é aceito em um for?
+: ajuda a evitar if's
+: polimorfismo
 
 * Mini Duck Simulator
 
-copiar do poop
+.image images/poop/ducks.jpg
 
 * Conclusão
 
