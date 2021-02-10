@@ -1,0 +1,82 @@
+Poop 💩
+Programação orientada a objetos com Python
+Tags: python, python3, oop
+
+Cássio Botaro
+Desenvolvedor, Magazine Luiza
+cassiobotaro@gmail.com
+https://cassiobotaro.github.io/
+@cassiobotaro
+
+
+* Slides
+
+Estes slides já estão disponíveis em [[http://bit.ly/poop-canal-do-regis][http://bit.ly/poop-canal-do-regis]]
+
+* Avisos importantes ⚠️
+
+- Não discutiremos "Funcional vs Orientação a objetos";
+
+- Não é um curso completo sobre o assunto;
+
+- Tem o propósito de ser didática.
+
+Todas as opniões contidas aqui representam a opnião do autor.
+
+.image images/python_moderno/sillywalk.jpg 350 800
+
+* Agenda
+
+- Objetos e mensagens
+
+- FizzBuzz (Influenciado por smalltalk)
+
+- Relação entre objetos
+
+continua...
+
+.image images/python_moderno/sillywalk.jpg 350 800
+
+* Agenda
+
+- Lights out (game)
+
+- Objetos e múltiplos comportamentos
+
+- Mini Duck Simulator
+
+Por fim um espaço aberto para tirarem dúvidas.
+
+.image images/python_moderno/sillywalk.jpg 350 800
+
+* Objetos e mensagens
+
+abstração/ encapsulamento
+
+* FizzBuzz (Influenciado por smalltalk)
+
+fizzbuzz.py
+
+* Relação entre objetos
+
+Herança e composição
+
+* Lights out (game)
+
+lights_out.py
+
+* Objetos e múltiplos comportamentos
+
+polimorfismo
+
+* Mini Duck Simulator
+
+copiar do poop
+
+* Conclusão
+
+.background images/python_moderno/conclusao.jpg
+
+* Dúvidas?
+
+.image images/python_moderno/duvidas.jpg
