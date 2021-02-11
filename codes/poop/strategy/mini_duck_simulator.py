@@ -2,7 +2,7 @@ from duck import DecoyDuck, MallardDuck, ModelDuck, RubberDuck
 from fly_behavior import FlyRocketPowered
 
 if __name__ == "__main__":
-    # Instatiate ducks
+    # Cria instâncias de patos
     print("Mallard duck")
     mallard = MallardDuck()
     mallard.perform_quack()
@@ -12,6 +12,7 @@ if __name__ == "__main__":
     rubber = RubberDuck()
     rubber.perform_quack()
     rubber.perform_fly()
+    # ...
 
     print("Decoy duck")
     decoy = DecoyDuck()
@@ -23,11 +24,12 @@ if __name__ == "__main__":
     model.perform_quack()
     model.perform_fly()
     # change fly behavior at runtime
+    # muda o comportamento de voo em tempo de execução
     model.set_fly_behavior(FlyRocketPowered())
     model.perform_fly()
 
-    # polymorphism
-    # all ducks can swin and display yourself
+    # polimorfismo
+    # todos os patos podem voar e se mostrar na tela
     print("Display all ducks")
     for duck in (mallard, rubber, decoy, model):
         duck.display()
