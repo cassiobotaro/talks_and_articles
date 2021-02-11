@@ -98,6 +98,8 @@ Por fim um espaço aberto para tirarem dúvidas.
 
 * Objetos e múltiplos comportamentos
 
+* Polimorfismo
+
 .code ./codes/poop/strategy/mini_duck_simulator.py /# Cria/,/# .../
 .code ./codes/poop/strategy/mini_duck_simulator.py /# polimorfismo/,
 
