@@ -1,0 +1,132 @@
+🧑‍💻 Como contribuir com projetos Open Source
+Um guia prático
+Tags: hacktoberfest,vim,open source
+
+Cássio Botaro
+Software Developer Engineer, Amazon
+cassiobotaro@gmail.com
+https://cassiobotaro.dev/
+@cassiobotaro
+
+
+* Slides
+
+Estes slides já estão disponíveis em [[http://bit.ly/contribuindo-open-source][http://bit.ly/contribuindo-open-source-trybe]]
+
+.image images/open-source/opensource.svg.png
+
+* Agenda
+
+- Passo a passo da pessoa contribuidora;
+- Passo a Passo da pessoa mantendora;
+- Dicas.
+
+* Passo a passo da pessoa contribuidora
+
+* Entendendo o projeto
+
+.image images/open-source/vim-bootstrap.com.png
+.caption [[http://vim-bootstrap.com/][Vim Bootstrap]]
+
+* Como contribuir
+
+.image images/open-source/repo.png
+.caption [[https://github.com/editor-bootstrap/vim-bootstrap][Repositório]]
+
+* Fork
+
+Uma bifurcação (_fork_) é uma cópia de um repositório. Bifurcar um repositório permite que você faça experiências à vontade sem comprometer o projeto original.
+
+.image images/open-source/fork.png
+
+    $ gh repo fork editor-bootstrap/vim-bootstrap
+
+* Clone
+
+Comando utilizado para replicar um repositório junto a seus arquivos e histórico de versões.
+
+.image images/open-source/clone.png
+
+    $ gh repo clone vim-bootstrap
+
+* Issues
+
+São ideias, melhorias, tarefas ou bugs para se trabalhar no Github.
+
+.image images/open-source/issues.png
+
+    $ gh issue create --title="Theme <name here> not found" --body="We should be able to choose the <name here> theme."
+
+* Code
+
+Falar é fácil, mostre-me o código
+
+.image images/open-source/code.png
+
+* Push
+
+Envia as modificações de uma ramificação para o servidor remoto.
+
+.image images/open-source/push.png
+
+    $ git push -o origin <nome-da-branch>
+
+* Pull Request
+
+Também conhecido como "merge request", é quando você faz uma mudança em um código e pede a autorização dos responsáveis pelo projeto para fazer a junção da sua mudança com a versão atual do mesmo.
+
+.image images/open-source/pull-request.png
+
+    $ gh pr create -R editor-bootstrap/vim-bootstrap -t "Add theme <aqui o nome do tema>"
+
+* Passo a passo da pessoa mantenedora
+
+* Verificando Pull Request
+
+Baixe uma cópia da ramificação localmente para testar.
+
+.image images/open-source/verificando.png
+
+    $ gh pr checkout <numero-pr>
+
+* Code Review
+
+Code Review é um processo de qualidade dentro do desenvolvimento de software que consiste na disponibilização do código para revisão de terceiros.
+
+.image images/open-source/review.png
+
+    $ gh pr review <numero-pr> --approve -b "LGTM"
+
+* Merge
+
+É a mesclagem entre duas versões fazendo assim a junção entre trabalhos distintos.
+
+.image images/open-source/merge.png
+
+    $ gh pr merge <numeo-pr> -d
+
+* Dicas
+
+.image images/open-source/git.png
+
+* Boas primeiras questões
+
+.image images/open-source/good-first-issue.png
+
+.caption [[https://github.com/search?q=good-first-issue&type=issues][Bons primeiros problemas]]
+
+* Modelos de Issues
+
+.image images/open-source/form-issues.png
+
+.caption [[https://github.com/cassiobotaro/botaro-cassio-no-youtube/issues/new?assignees=cassiobotaro&labels=sugestao-tema&template=sugestao.yml&title=%5BTema%5D%3A+][Formulário para contribuição]]
+
+* Código de Conduta e Contributing
+
+.image images/open-source/coc-contributing.png
+
+.caption [[https://github.com/cassiobotaro/do_zero_a_implantacao/blob/main/CODE_OF_CONDUCT.md][Código de Conduta]] e [[https://github.com/cassiobotaro/do_zero_a_implantacao/blob/main/CONTRIBUTING.md][CONTRIBUTING]]
+
+* Dúvidas?
+
+.image images/open-source/duvidas.jpg
